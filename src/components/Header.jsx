@@ -14,6 +14,7 @@ const Header = () => {
         <Link to="/" className="icons"> 
             <FontAwesomeIcon icon={faAngleLeft} />
         </Link>
+        <h1 className="title">Harry Potter characters</h1>
         <div className="icons icon-space">
             <FaMicrophone />
             <FaCog />
@@ -24,14 +25,12 @@ const Header = () => {
 }
 
 const Wrapper = styled.div`
-border: 1px solid red;
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #ec4c8b;
-    padding: 2rem;
-    margin: -1rem;
+    padding: 0 3.5rem;
     .icons {
         color: #fff;
         font-size: 1.7rem;
@@ -39,6 +38,9 @@ border: 1px solid red;
     .icon-space{
         display: flex;
         gap: 0.9rem;
+    }
+    .title {
+        font-size: 2rem;
     }
 }
 `
