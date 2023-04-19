@@ -7,9 +7,6 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
-  esbuild: {
-    jsxInject: 'import { jsx } from \'@emotion/react\'',
-  },
   optimizeDeps: {
     include: ['@emotion/react', '@emotion/styled'],
   },

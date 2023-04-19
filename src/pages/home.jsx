@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useSelector } from 'react-redux';
 import Header from '../components/Header';
-// import styled from 'styled-components'
 import Characters from '../components/Characters';
 
 const Home = () => {
