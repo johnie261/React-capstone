@@ -140,7 +140,7 @@ Or you can use services like Render, Netlify to deploy it.
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Prantosh Biswas**
+👤 **Johnie Njoroge**
 
 - GitHub: [@Johnie](https://github.com/johnie261)
 - Twitter: [@Johnie](https://twitter.com/njorogejohnie)
