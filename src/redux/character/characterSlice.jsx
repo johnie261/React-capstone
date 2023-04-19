@@ -12,7 +12,7 @@ export const fetchCharacters = createAsyncThunk('characters/fetchCharacters',
     async (thunkAPI) => {
         try {
             const resp = await axios(url);
-            return resp.data;
+            return resp.data.slice(0,25);
         } catch (error) {
             return thunkAPI.rejectWithValue('something went wrong');
         }
@@ -27,13 +27,16 @@ const characterSlice = createSlice({
         // fetch characters from the API
           .addCase(fetchCharacters.pending, (state) => ({
             ...state,
+            isLoading: true,
           }))
           .addCase(fetchCharacters.fulfilled, (state, action) => ({
             ...state,
             characters: action.payload,
+            isLoading: false,
           }))
           .addCase(fetchCharacters.rejected, (state) => ({
             ...state,
+            isLoading: false,
           }));
       },
 })

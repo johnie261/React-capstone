@@ -5,24 +5,53 @@ const Character = ({id, image, name}) => {
   return (
     <Wrapper>
     <li className="character">
-        <img src={image} alt={name} className="image"/>
+      {image && <img src={image} alt={name} className="image"/>}
+      {!image && <h2 className="not-found">Image not found</h2>}
+      <div className="txt">
         <p>{name}</p>
+      </div>
     </li>
     </Wrapper>
   )
 }
 
+// <img src={image} alt={name} className="image"/>
+
 const Wrapper = styled.li`
 .character {
-  border: 1px solid black;
+  border-radius: 1rem;
   list-style: none;
   .image {
+    border-radius: 1rem;
     width: 100%;
     height: 60vh;
   }
-  &:nth-child(even) (
-    background-color: #fd5294;
-  )
+  .txt {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .character {
+    .image {
+      height: 40vh;
+      width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 999px) {
+  .character {
+    .image {
+      height: 25vh;
+      width: 100%;
+    }
+  }
+  .txt {
+    font-size: 1.3rem;
+  }
 }
 `
 
