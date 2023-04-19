@@ -1,48 +1,53 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { fetchCharacters } from '../redux/character/characterSlice';
-import Character from './Character';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { fetchCharacters } from '../redux/character/characterSlice';
+import Character from './Character';
 import Details from '../pages/details';
 
-const Characters = ({characters}) => {
-    const { isLoading } = useSelector((store) => store.character);
-    console.log(isLoading)
-    const dispatch = useDispatch();
+const Characters = ({ characters }) => {
+  const { isLoading } = useSelector((store) => store.character);
+  const dispatch = useDispatch();
 
-    useEffect(()=>{
-        dispatch(fetchCharacters());
-    }, [])
+  useEffect(() => {
+    dispatch(fetchCharacters());
+  }, [dispatch]);
 
-    if(isLoading) {
-      return (
-        <div className="sect">
-          <h2>Loading...</h2>
-        </div>
-      )
-    }
+  if (isLoading) {
+    return (
+      <div className="sect">
+        <h2>Loading...</h2>
+      </div>
+    );
+  }
 
   return (
-    <Wrapper>   
-    <p className="title-character">STATS BY CHARACTER</p>
-    <ul className="characters">
-     
-        {characters.map((character)=>(
-          <Link to={`details/${character.id}`} element={<Details />} className="link">
+    <Wrapper>
+      <p className="title-character">STATS BY CHARACTER</p>
+      <ul className="characters">
+
+        {characters.map((character) => (
+          <Link to={`details/${character.id}`} element={<Details />} className="link" key={character.id}>
             <Character
-            key={character.id}
-            id={character.id}
-            image={character.image}
-            name={character.name}
+              id={character.id}
+              image={character.image}
+              name={character.name}
             />
           </Link>
-        )
-        )}
-    </ul>
+        ))}
+      </ul>
     </Wrapper>
-  )
-}
+  );
+};
+
+Characters.propTypes = {
+  characters: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
+};
 
 const Wrapper = styled.section`
 background-color: #ec4c8b;
@@ -84,6 +89,6 @@ background-color: #db3578;
   }
 }
 
-`
+`;
 
-export default Characters
+export default Characters;

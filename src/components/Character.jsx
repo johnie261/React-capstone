@@ -1,19 +1,23 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const Character = ({id, image, name}) => {
-  return (
-    <Wrapper>
+const Character = ({ image, name }) => (
+  <Wrapper>
     <li className="character">
-      {image && <img src={image} alt={name} className="image"/>}
+      {image && <img src={image} alt={name} className="image" />}
       {!image && <h2 className="not-found">Image not found</h2>}
       <div className="txt">
         <p>{name}</p>
       </div>
     </li>
-    </Wrapper>
-  )
-}
+  </Wrapper>
+);
+
+Character.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 // <img src={image} alt={name} className="image"/>
 
@@ -53,7 +57,6 @@ const Wrapper = styled.li`
     font-size: 1.3rem;
   }
 }
-`
+`;
 
-export default Character
-
+export default Character;

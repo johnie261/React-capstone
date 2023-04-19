@@ -1,28 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import { FaCog } from 'react-icons/fa';
-import { FaMicrophone } from 'react-icons/fa';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { FaCog, FaMicrophone } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
-
-const Header = () => {
-  return (
-    <Wrapper>
+const Header = () => (
+  <Wrapper>
     <div className="header">
-        <Link to="/" className="icons"> 
-            <FontAwesomeIcon icon={faAngleLeft} />
-        </Link>
-        <p className="title">Harry Potter characters</p>
-        <div className="icons icon-space">
-            <FaMicrophone />
-            <FaCog />
-        </div>
-   </div>
-    </Wrapper>
-  )
-}
+      <Link to="/" className="icons">
+        <FontAwesomeIcon icon={faAngleLeft} />
+      </Link>
+      <p className="title">Harry Potter characters</p>
+      <div className="icons icon-space">
+        <FaMicrophone />
+        <FaCog />
+      </div>
+    </div>
+  </Wrapper>
+);
 
 const Wrapper = styled.div`
 .header {
@@ -61,6 +57,6 @@ const Wrapper = styled.div`
         }
     }
   }
-`
+`;
 
-export default Header
+export default Header;

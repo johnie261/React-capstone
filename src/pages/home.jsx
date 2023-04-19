@@ -1,36 +1,36 @@
-import React, { useState } from 'react'
-import Header from '../components/Header'
-// import styled from 'styled-components'
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import Characters from '../components/Characters';
 import { useSelector } from 'react-redux';
+import Header from '../components/Header';
+// import styled from 'styled-components'
+import Characters from '../components/Characters';
 
 const Home = () => {
   const { characters } = useSelector((store) => store.character);
-  const [filter, setFilter]= useState('');
+  const [filter, setFilter] = useState('');
 
   const handleChange = (e) => {
-    setFilter(e.target.value)
-  }
+    setFilter(e.target.value);
+  };
 
   const filteredCharacters = characters.filter(
     (character) => character.name.toLowerCase().includes(filter.toLowerCase()),
   );
 
-  return ( 
+  return (
     <Wrapper>
       <section>
         <Header />
         <div className="input">
           <form className="form">
-              <input type="text" placeholder="Enter name of the character" onChange={handleChange}/>
+            <input type="text" placeholder="Enter name of the character" onChange={handleChange} />
           </form>
         </div>
-        <Characters characters={filteredCharacters}/>
+        <Characters characters={filteredCharacters} />
       </section>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
 margin: -1rem;
@@ -57,6 +57,6 @@ margin: -1rem;
     }
   }
 }
-`
+`;
 
 export default Home;
