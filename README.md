@@ -49,8 +49,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
-- [Loom Video]()
+- [Live Demo Link](https://harry-potter-wiki.netlify.app/)
+- [Loom Video](https://www.loom.com/share/3ca4c5c06ac74a429d90d40abce25b0b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +180,7 @@ Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ]  Customize the App with Images.
+- [ ]  Customize the App with Animation.
 - [ ]  Add Sliders.
 - [ ]  Customize the Desktop Version.
 
