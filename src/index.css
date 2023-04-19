@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato:wght@700&display=swap');
 
 * {
   font-family: 'Cabin', sans-serif;
+  
 }
 
 :root {
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
 
+.sect {
+  height: 90vh;
+  margin-top: -2rem;
+  background-color: #db3578;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
