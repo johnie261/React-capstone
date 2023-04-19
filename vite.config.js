@@ -3,6 +3,10 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
   esbuild: {
     jsxInject: 'import { jsx } from \'@emotion/react\'',
   },

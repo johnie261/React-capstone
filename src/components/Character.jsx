@@ -21,7 +21,7 @@ Character.propTypes = {
 
 // <img src={image} alt={name} className="image"/>
 
-const Wrapper = styled.li`
+const Wrapper = styled.div`
 .character {
   border-radius: 1rem;
   list-style: none;
