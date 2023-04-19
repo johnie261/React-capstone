@@ -38,13 +38,13 @@ margin: -1rem;
   display: flex;
   justify-content: center;
   background: #ec4c8b;
+  background-color: #db3578;
   .form {
-    padding: .7rem;
+    padding: 1.5rem;
     margin-top: -1.7rem;
     display: flex;
     justify-content: center;
     width: 50%;
-    background: #ec4c8b;
     input {
       border-radius: .7rem;
       padding: .7rem;
@@ -52,6 +52,8 @@ margin: -1rem;
       font-size: 1rem;
       width: 90%;
       background-color: #fff;
+      outline: none;
+      border: none;
     }
   }
 }
