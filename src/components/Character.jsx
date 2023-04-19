@@ -19,8 +19,6 @@ Character.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-// <img src={image} alt={name} className="image"/>
-
 const Wrapper = styled.div`
 .character {
   border-radius: 1rem;
