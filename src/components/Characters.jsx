@@ -60,14 +60,18 @@ background-color: #db3578;
 }
 .characters {
   margin-top: -3rem;
+  padding: 0rem 0rem 0rem 0rem;
   list-style: none;
-  padding: 3rem;
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  
   .link {
     text-decoration: none;
+    &:nth-child(odd) {
+      background-color: #ec4c8b;
+    }
   }
 }
 
@@ -86,6 +90,17 @@ background-color: #db3578;
   }
   .characters {
     grid-template-columns: 1fr 1fr;
+    .link {
+      &:nth-child(4n - 3),
+      &:nth-child(4n) {
+        background-color: #ec4c8b;
+      }
+
+      &:nth-child(4n - 2),
+      &:nth-child(4n - 1) {
+        background-color: #db3578;
+      }
+    }
   }
 }
 
