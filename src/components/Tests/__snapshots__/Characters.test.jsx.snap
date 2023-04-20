@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters component matches the snapshot 1`] = `
+<section
+  className="sc-eDDNvR hspNbr"
+>
+  <p
+    className="title-character"
+  >
+    STATS BY CHARACTER
+  </p>
+  <ul
+    className="characters"
+  >
+    <a
+      className="link"
+      element={<Details />}
+      href="/details/1"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-beqWaB jtKaYx"
+      >
+        <li
+          className="character"
+        >
+          <img
+            alt="Harry Potter"
+            className="image"
+            src="harry.jpeg"
+          />
+          <div
+            className="txt"
+          >
+            <p>
+              Harry Potter
+            </p>
+          </div>
+        </li>
+      </div>
+    </a>
+    <a
+      className="link"
+      element={<Details />}
+      href="/details/2"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-beqWaB jtKaYx"
+      >
+        <li
+          className="character"
+        >
+          <img
+            alt="Hermione Granger"
+            className="image"
+            src="hermione.jpeg"
+          />
+          <div
+            className="txt"
+          >
+            <p>
+              Hermione Granger
+            </p>
+          </div>
+        </li>
+      </div>
+    </a>
+  </ul>
+</section>
+`;

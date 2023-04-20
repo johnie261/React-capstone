@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleCharacter component renders correctly 1`] = `
+<section
+  className="sc-beqWaB cGTVhp"
+>
+  <section>
+    <div
+      className="intro"
+    >
+      <img
+        alt="name"
+        className="Img"
+        src="https://via.placeholder.com/150"
+      />
+      <div>
+        <h2>
+          Harry Potter
+        </h2>
+        <h3>
+          Year of Birth:
+        </h3>
+      </div>
+    </div>
+    <div
+      className="bio"
+    >
+      <h3>
+        Harry Potter
+         
+        BIOGRAPHIC INFORMATION
+      </h3>
+    </div>
+    <ul>
+      <li>
+        <h3>
+          Date Of Birth
+        </h3>
+        <h3>
+          Unknown
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Also known as
+        </h3>
+        <h3 />
+        <h3>
+          N/A
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Gender
+        </h3>
+        <h3>
+          Male
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Species
+        </h3>
+        <h3>
+           
+          Human
+        </h3>
+      </li>
+      <li>
+        <h3>
+          ancestry
+        </h3>
+        <h3>
+          Unknown
+        </h3>
+      </li>
+      <li>
+        <h3>
+          House
+        </h3>
+        <h3>
+          Gryffindor
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Hair colour
+        </h3>
+        <h3>
+          Black
+        </h3>
+      </li>
+      <li>
+        <h3>
+          wand
+        </h3>
+        <div
+          className="wand"
+        >
+          <div>
+            <strong>
+              wood
+              :
+               
+            </strong>
+             
+            Holly
+          </div>
+          <div>
+            <strong>
+              core
+              :
+               
+            </strong>
+             
+            Phoenix feather
+          </div>
+          <div>
+            <strong>
+              length
+              :
+               
+            </strong>
+             
+            11 inches
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Played by
+        </h3>
+        <h3>
+           
+          Daniel Radcliffe
+        </h3>
+      </li>
+    </ul>
+    <div
+      className="info"
+    />
+  </section>
+</section>
+`;
