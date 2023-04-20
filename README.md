@@ -50,7 +50,7 @@
 
 
 - [Live Demo Link](https://harry-potter-wiki.netlify.app/)
-- [Loom Video](https://www.loom.com/share/3ca4c5c06ac74a429d90d40abce25b0b)
+- [Loom Video](https://www.loom.com/share/8b5a9bee76fa4906b809e3ac663458ee)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
